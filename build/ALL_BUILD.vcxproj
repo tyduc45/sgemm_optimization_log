@@ -27,7 +27,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{19E28BD8-1AF1-3843-A3DF-EDFAEC286384}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -55,7 +55,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.8.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.9.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -175,13 +175,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="E:\cpp_review\cuda\build\morden_cuda.vcxproj">
-      <Project>{A616969D-C1E8-368B-8CB5-AAEBA5C8F161}</Project>
-      <Name>morden_cuda</Name>
+    <ProjectReference Include="E:\cpp_review\cuda\build\modern_cuda.vcxproj">
+      <Project>{4DDD91A2-3698-3AF0-900B-CC17DC44F652}</Project>
+      <Name>modern_cuda</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.8.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.9.targets" />
   </ImportGroup>
 </Project>

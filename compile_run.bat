@@ -1,5 +1,6 @@
-if not exist build md build 
-cd build 
-cmake .. 
-cmake --build .
-.\Debug\morden_cuda.exe
+@echo off
+cmake -S . -B build
+if errorlevel 1 exit /b %errorlevel%
+cmake --build build --config Release --parallel
+if errorlevel 1 exit /b %errorlevel%
+.\build\Release\modern_cuda.exe

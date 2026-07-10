@@ -1,0 +1,10 @@
+If:
+    PathMatch: .*\.(cuh|cu|cpp|c)$
+CompileFlags:
+    Add:
+        - -x
+        - cuda
+        - --cuda-host-only
+        - --cuda-path=E:\CUDA
+        - -IE:\CUDA\include # cuda sdk path on local machine
+        - -IE:\cpp_review\cuda\include # custom cuda include headers in this project

@@ -1,1 +1,1 @@
-E:/Microsoft Visual Studio/2022/Community/MSBuild/Microsoft/VC/v170
+E:/Microsoft Visual Studio/2022/MSBuild/Microsoft/VC/v170
