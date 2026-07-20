@@ -27,6 +27,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7FE1DA54-6C19-39BA-8887-6A95FA2EFC78}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>ZERO_CHECK</ProjectName>
@@ -77,6 +78,19 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -P E:/cpp_review/cuda/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
@@ -87,6 +101,19 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -P E:/cpp_review/cuda/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
@@ -97,6 +124,19 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -P E:/cpp_review/cuda/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
@@ -107,6 +147,19 @@
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -P E:/cpp_review/cuda/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="E:\cpp_review\cuda\build\CMakeFiles\ac475326aa1ecb7e0c5a446f6db1dcb5\generate.stamp.rule">
@@ -122,7 +175,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;E:\cpp_review\cuda\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\cpp_review\cuda\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
@@ -136,7 +189,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;E:\cpp_review\cuda\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\cpp_review\cuda\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
@@ -150,7 +203,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;E:\cpp_review\cuda\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\cpp_review\cuda\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
@@ -164,7 +217,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\cmake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;E:\cpp_review\cuda\CMakeLists.txt;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCUDACompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeCXXCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeRCCompiler.cmake;E:\cpp_review\cuda\build\CMakeFiles\3.31.3\CMakeSystem.cmake;E:\cpp_review\cuda\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\cpp_review\cuda\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>

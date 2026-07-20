@@ -76,17 +76,11 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
-
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=E:/cpp_review/cuda/build/CMakeFiles/pkgRedirects
 
-//No help, variable specified on the command line.
-CMAKE_GENERATOR_INSTANCE:UNINITIALIZED=E:/Microsoft Visual Studio/2022
-
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files/modern_cuda
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/modern_cuda
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=E:/Microsoft Visual Studio/2022/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe
@@ -264,8 +258,10 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Visual Studio 17 2022
+//Generator instance identifier.
+CMAKE_GENERATOR_INSTANCE:INTERNAL=E:/Microsoft Visual Studio/2022
 //Name of generator platform.
-CMAKE_GENERATOR_PLATFORM:INTERNAL=x64
+CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this

@@ -33,8 +33,6 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\sys\types.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\time.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\wchar.h
 E:\cpp_review\cuda\include\cuda_define.cuh
-E:\cpp_review\cuda\include\matmul_native.cuh
-E:\cpp_review\cuda\include\matmul_sm.cuh
 E:\cpp_review\cuda\include\matmul_sm_sliding.cuh
 E:\cpp_review\cuda\include\matmul_verify.cuh
 E:\cpp_review\cuda\include\Timer.cuh
@@ -89,7 +87,6 @@ E:\CUDA\include\texture_types.h
 E:\CUDA\include\vector_functions.h
 E:\CUDA\include\vector_functions.hpp
 E:\CUDA\include\vector_types.h
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\algorithm
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\ammintrin.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\atomic
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\cctype
@@ -110,7 +107,6 @@ E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\cwchar
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\eh.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\emmintrin.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\exception
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\functional
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\immintrin.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\initializer_list
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\intrin.h
@@ -129,7 +125,6 @@ E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\new
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\nmmintrin.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\ostream
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\pmmintrin.h
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\random
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\sal.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\setjmp.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\smmintrin.h
@@ -138,7 +133,6 @@ E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\stdint.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\streambuf
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\system_error
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\tmmintrin.h
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\tuple
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\typeinfo
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\type_traits
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\use_ansi.h
@@ -150,10 +144,8 @@ E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\vcruntime_new.
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\vcruntime_new_debug.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\vcruntime_string.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\vcruntime_typeinfo.h
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\vector
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\wmmintrin.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\xatomic.h
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\xbit_ops.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\xcall_once.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\xerrc.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\xfacet
@@ -172,11 +164,7 @@ E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\xutility
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\yvals.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\yvals_core.h
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\zmmintrin.h
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_bit_utils.hpp
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_heap_algorithms.hpp
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_int128.hpp
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp
-E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_minmax.hpp
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_sanitizer_annotate_container.hpp
 E:\Microsoft Visual Studio\2022\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp

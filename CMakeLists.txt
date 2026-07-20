@@ -11,15 +11,14 @@ if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
     set(CMAKE_CUDA_ARCHITECTURES native)
 endif()
 
-add_executable(${PROJECT_NAME}
-    src/main.cu
-    src/cuda_define.cu
-    src/Timer.cu
-    src/matmul_native.cu
-    src/matmul_sm.cu
-    src/matmul_rgt.cu
-    src/matmul_verify.cu
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
+    "src/*.cu"
+    "src/*.cuh"
+    "src/*.cpp"
+    "src/*.h"
 )
+
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_compile_options(${PROJECT_NAME} PRIVATE
